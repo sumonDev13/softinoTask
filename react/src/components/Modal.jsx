@@ -1,4 +1,3 @@
-/* eslint-disable react/prop-types */
 const Modal = ({ isOpen, onClose, cart, totalPrice, totalQuantity }) => {
 	console.log({ totalPrice });
 	console.log({ cart });

@@ -1,4 +1,3 @@
-/* eslint-disable react/prop-types */
 const FloatingButton = ({ count = 0, onOpen }) => {
 	return (
 		<>

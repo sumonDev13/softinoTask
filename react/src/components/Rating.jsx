@@ -1,4 +1,3 @@
-// eslint-disable-next-line react/prop-types
 const Rating = ({ totalRating, reviewCount }) => {
 	const fullStars = Math.floor(totalRating);
 	const halfStar = totalRating % 1 >= 0.5;
