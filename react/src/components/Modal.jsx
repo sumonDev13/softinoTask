@@ -1,10 +1,7 @@
 const Modal = ({ isOpen, onClose, cart, totalPrice, totalQuantity }) => {
-	console.log({ totalPrice });
-	console.log({ cart });
 
 	return (
 		<div
-			// onClick={onClose}
 			className={`${
 				!isOpen && 'hidden'
 			} fixed inset-0 z-50 flex justify-center items-center bg-black/60 p-4`}
@@ -14,9 +11,6 @@ const Modal = ({ isOpen, onClose, cart, totalPrice, totalQuantity }) => {
 				id="cartDetails"
 				className="relative w-full max-w-[650px] h-fit p-4 md:p-6 bg-white flex flex-col justify-center items-center rounded-3xl"
 			>
-				<button onClick={onClose} className="absolute right-4 top-1" id="close">
-					✖
-				</button>
 
 				<h2 className="w-full text-left text-xl md:text-2xl font-bold mb-4">
 					Your Cart

@@ -9,13 +9,13 @@ const Rating = ({ totalRating, reviewCount }) => {
 				{Array(fullStars)
 					.fill()
 					.map((_, index) => (
-						<img key={`full-${index}`} src="/star-fill.png" alt="full star" />
+						<img key={`full-${index}`} src="/images/star-fill.png" alt="full star" />
 					))}
-				{halfStar && <img src="/star-half-fill.png" alt="half star" />}
+				{halfStar && <img src="images/star-half-fill.png" alt="half star" />}
 				{Array(emptyStars)
 					.fill()
 					.map((_, index) => (
-						<img key={`empty-${index}`} src="/star.png" alt="empty star" />
+						<img key={`empty-${index}`} src="images/star.png" alt="empty star" />
 					))}
 			</div>
 			<div className="text-sm text-[#8091A7]">({reviewCount} Reviews)</div>
