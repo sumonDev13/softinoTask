@@ -1,4 +1,4 @@
-const FloatingButton = ({ count = 0, onOpen }) => {
+const CheckoutBtn = ({ count = 0, onOpen }) => {
 	return (
 		<>
 			{count > 0 ? (
@@ -18,4 +18,4 @@ const FloatingButton = ({ count = 0, onOpen }) => {
 		</>
 	);
 };
-export default FloatingButton;
+export default CheckoutBtn;

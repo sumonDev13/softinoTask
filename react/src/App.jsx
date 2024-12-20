@@ -1,8 +1,8 @@
 import { useEffect, useState } from 'react';
 import FavoriteBtn from './components/FavoriteBtn';
-import FloatingButton from './components/FloatingButton';
+import CheckoutBtn from './components/CheckoutBtn';
 import Modal from './components/Modal';
-import Rating from './components/Rating';
+import Reviews from './components/Reviews';
 import { product } from './data/productDetails.json';
 
 const App = () => {
@@ -100,7 +100,7 @@ const App = () => {
 					<h1 className="title text-2xl md:text-3xl lg:text-4xl font-semibold">
 						{product.name}
 					</h1>
-					<Rating
+					<Reviews
 						totalRating={product.rating.totalRating}
 						reviewCount={product.rating.reviewCount}
 					/>
@@ -196,7 +196,7 @@ const App = () => {
 				</div>
 			</div>
 
-			<FloatingButton
+			<CheckoutBtn
 				count={cart.reduce((sum, item) => sum + item.quantity, 0)}
 				onOpen={() => setIsOpen(true)}
 			/>
