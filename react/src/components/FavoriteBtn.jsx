@@ -1,15 +1,15 @@
 import { useState } from 'react';
 
 const FavoriteBtn = () => {
-	const [isFav, setIsFev] = useState(false);
+	const [isFavorite, setIsFavorite] = useState(false);
 
-	const handleFav = () => {
-		setIsFev((prev) => !prev);
+	const handleFavorite = () => {
+		setIsFavorite((prev) => !prev);
 	};
 
 	return (
-		<button onClick={handleFav}>
-			{isFav ? (
+		<button onClick={handleFavorite}>
+			{isFavorite ? (
 				<img src="/heart-filled.svg" alt="heart-filled" />
 			) : (
 				<img src="/heart.svg" alt="heart" />

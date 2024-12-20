@@ -37,7 +37,7 @@ const Modal = ({ isOpen, onClose, cart, totalPrice, totalQuantity }) => {
 										<tr key={i} className="border-b border-[#DADFEB]">
 											<td className="p-2 flex gap-2">
 												<div className="w-9 h-9 object-cover object-center overflow-hidden">
-													<img src={`/${item.color}.jpeg`} alt="" />
+													<img src={`/images/${item.color}.jpeg`} alt="Thumbnail" />
 												</div>
 												{item.name}
 											</td>
